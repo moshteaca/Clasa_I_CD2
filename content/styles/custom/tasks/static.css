@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+div#page-container.help{
+	width:80%;
+	padding-left: 100px;
+}
+div#page-container.help h4{
+	
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+div#page-container.help .highlight{
+	color: #FFF;
+	background-color: #09F;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+div#page-container.help ol {
+	color: #069;
+	font-weight: bold;
+}
+div#page-container.help ol p{
+	color: #000;
+	font-weight: normal;
+}
+div#page-container.help .helpicon img{
+	height: 30px;
+	width: auto;
+	vertical-align: top;
+	
+}
+div#page-container.help .helpicon{
+    margin-right:15px;
+	margin-bottom:5px;
+	padding-bottom:25px;
+	float:left;
+	
+}
+.clear{
+	clear: both;}

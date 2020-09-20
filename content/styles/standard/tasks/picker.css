@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-picker .task-target b,
+.task-picker .task-target u,
+.task-picker .task-target i {
+	font-weight: normal !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+	vertical-align: middle;
+}
+.task-picker .task-target u,
+.task-picker .task-target i {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+
+	margin: 0px -3px;
+	padding: 0px 3px;
+}
+.task-picker .task-target u {
+	transition: all ease-in-out 0.2s;
+}
+.task-picker .task-target u.s {
+	color: #CC071E;
+	transition: all ease-in 0s;
+}
+.task-picker .task-target i {
+	transition: all ease-in-out 0.2s;
+}
+.task-picker .task-target i.s {
+	color: #008BCF;
+}
+
+/* .task */
+.task-picker .lesson {
+	font-size: 40px;
+	line-height: 50px;
+}
+.task-picker .subpage.not-checked .task-target u:hover,
+.task-picker .subpage.not-checked .task-target i:hover {
+	font-size: 50px;
+	z-index: 10;
+	padding: 0px 1px;
+}
+.task-picker .subpage.checked .task-target u {
+	cursor: default;
+}
+.task-picker .subpage.checked .task-target i {
+	cursor: default;
+	color: #CC071E;
+}
+.task-picker .subpage.checked .task-target i.s {
+	color: #008BCF;
+}
+

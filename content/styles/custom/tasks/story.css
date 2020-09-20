@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task#task-story-n-1 .task-target {
+	position: relative;
+	display: inline-block;
+	width: 16%;
+	height: 160px;
+	margin: 0px 0px 30px;
+	line-height: 120px;
+	text-align: center;
+}
+.task#task-story-n-1 .task-answer {
+	position: relative;
+	display: inline-block;
+	width: 160px;
+	height: 120px;
+	vertical-align: middle;
+}
+.task#task-story-n-1 .task-target#task-target-01 {
+	display: block;
+	width: 360px;
+	height: 240px;
+	margin: 0px auto 0px;
+}
+.task#task-story-n-1 .task-answer#task-answer-01 {
+	width: 360px;
+	height: 210px;
+}
+
+.task#task-story-recap1-1 .task-target{
+	height: 410px;
+}
+.task#task-story-abc-1 .task-target{
+	height: 420px;
+}
+.task#task-story-eacc-1 .task-target{
+	height: 370px;
+}

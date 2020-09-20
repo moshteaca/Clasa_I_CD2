@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ábécéskönyv - 2. rész</title>
+	<link href="styles/font-face.css" rel="stylesheet" type="text/css">
+	<link href="styles/legacy.css" rel="stylesheet" type="text/css">
+	<link href="styles/norand.main.css" rel="stylesheet" type="text/css">
+	<script>var versionIE = 'okIE'; var broswerIE = false;</script>
+
+	<!--[if lt IE 9]>
+	<script src="scripts/norand.tools/compatibility/ie8.js" type="text/javascript"></script>
+	<script src="scripts/norand.tools/compatibility/html5.js" type="text/javascript"></script>
+	<script>versionIE = 'preIE9'; browserIE = true;</script>
+	<![endif]-->
+
+	<script src="scripts/norand.tools/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="scripts/norand.tools/jquery.ui/jquery.ui.min.js" type="text/javascript"></script>
+	<script src="scripts/norand.tools/jquery.rotate/jquery.rotate.min.js" type="text/javascript"></script>
+
+	<script src="scripts/norand.manifest.js" type="text/javascript"></script>
+	<script src="scripts/norand.media.js" type="text/javascript"></script>
+	<script src="scripts/norand.main.js" type="text/javascript"></script>
+	<script src="scripts/norand.task.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/picker.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/counter.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/finder.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/quiz.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/match.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/dragger.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/coloring.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/static.js" type="text/javascript"></script>
+	<script src="scripts/norand.tasks/story.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="main-wrapper">
+	<div id="main-container">
+		<header id="main-header" class="default-ui">
+			<div class="audio-wrapper">
+				<audio id="audio-main-ui-page" class="audio-main-ui">
+					<source src="data/sounds/main-ui-page.mp3" type="audio/mpeg" />
+					<source src="data/sounds/main-ui-page.ogg" type="audio/ogg" />
+				</audio>
+				<audio id="audio-main-ui-select" class="audio-main-ui">
+					<source src="data/sounds/main-ui-select.mp3" type="audio/mpeg" />
+					<source src="data/sounds/main-ui-select.ogg" type="audio/ogg" />
+				</audio>
+				<audio id="audio-main-ui-deselect" class="audio-main-ui">
+					<source src="data/sounds/main-ui-deselect.mp3" type="audio/mpeg" />
+					<source src="data/sounds/main-ui-deselect.ogg" type="audio/ogg" />
+				</audio>
+				<audio id="audio-main-ui-good" class="audio-main-ui">
+					<source src="data/sounds/main-ui-good.mp3" type="audio/mpeg" />
+					<source src="data/sounds/main-ui-good.ogg" type="audio/ogg" />
+				</audio>
+				<audio id="audio-main-ui-bad" class="audio-main-ui">
+					<source src="data/sounds/main-ui-bad.mp3" type="audio/mpeg" />
+					<source src="data/sounds/main-ui-bad.ogg" type="audio/ogg" />
+				</audio>
+			</div>
+			<div class="left align-left">
+				<div id="main-title">
+					<div class="main-title-icons">
+					</div>
+					<div class="main-title-label">
+					</div>
+				</div>
+			</div>
+			<div class="right align-right">
+				<div class="button icon binary" id="option-sound"><img src="data/images/system/icon_soundon.png" alt=" " class="active" /><img src="data/images/system/icon_soundoff.png" alt=" " class="inactive" /></div>
+				<div class="button icon binary" id="option-fullscreen"><img src="data/images/system/icon_fullscreen.png" alt=" " class="inactive" /><img src="data/images/system/icon_restore.png" alt=" " class="active" /></div>
+                <div class="button icon" id="option-help" data-function="local" data-url="data/pages/help.html"><img src="data/images/system/icon_help.png" alt=" " class="active" /></div>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<section id="main-content">
+			<div id="main-load-area">
+				<iframe id="loader-local"></iframe>
+				<div id="loader-ajax"></div>
+			</div>
+			<div id="main-drop-area">
+				<div id="dropper"></div>
+				<div id="main-options" class="default-ui align-center disabled">
+					<div id="main-feedback"></div>
+					<div class="button text icon purple" id="option-submit"><img src="data/images/system/icon_submit.png" alt=" " />Kész</div>
+					<div class="button text icon purple" id="option-done"><img src="data/images/system/icon_option-done.png" alt=" " />Következő</div>
+					<div class="button text icon green" id="option-retry"><img src="data/images/system/icon_retry.png" alt=" " />Újra</div>
+				</div>
+			</div>
+		</section>
+		<footer id="main-footer" class="default-ui">
+			<div class="options-left align-left">
+				<div class="button text icon green" id="option-contents" data-function="local" data-url="data/pages/contents.html"><img src="data/images/system/icon_contents.png" alt=" " />Tartalom</div>
+			</div>
+			<div class="options-right align-right">
+				<div class="button text" id="option-prev">« Vissza</div>
+				<div class="button text" id="option-next">Tovább »</div>
+			</div>
+			<div class="clear">
+			</div>
+
+		</footer>
+		<div id="main-shutter">
+			<div id="main-content-shutter"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('norand.layout.css');
+@import url('norand.text.css');
+@import url('norand.style.css');
+@import url('norand.tasks.css');
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+body {
+	width: 100%;
+	min-width: 960px;
+	height: 100%;
+	min-height: 225px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	letter-spacing: 0.1pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0px 0px 15px;
+	border: 0px;
+}
+ul,
+ol {
+	padding: 0px 0px 0px 15px;
+}
+p,
+li {
+	text-align: justify;
+}
+p {
+	margin: 0px 0px 15px;
+}
+li {
+	margin: 0px 0px 5px;
+}
+.block {
+	display: block;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.align-left {
+	text-align: left !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-justify {
+	text-align: justify !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.clear {
+	display: block;
+	width: 100%;
+	height: 0px;
+	clear: both;
+}
+
+#page-container img.w60 {
+	width: 60px !important;
+	height: auto !important;
+}
+#page-container img.w90 {
+	width: 90px !important;
+	height: auto !important;
+}
+#page-container img.w120 {
+	width: 120px !important;
+	height: auto !important;
+}
+#page-container img.w150 {
+	width: 150px !important;
+	height: auto !important;
+}
+#page-container img.w180 {
+	width: 180px !important;
+	height: auto !important;
+}
+#page-container img.w210 {
+	width: 210px !important;
+	height: auto !important;
+}
+#page-container img.w240 {
+	width: 240px !important;
+	height: auto !important;
+}
+#page-container img.w270 {
+	width: 270px !important;
+	height: auto !important;
+}
+#page-container img.w300 {
+	width: 300px !important;
+	height: auto !important;
+}
+#page-container img.w330 {
+	width: 330px !important;
+	height: auto !important;
+}
+#page-container img.w360 {
+	width: 360px !important;
+	height: auto  !important;
+}

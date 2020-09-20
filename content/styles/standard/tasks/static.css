@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-static .task-target {
+	font-size: 36px;
+	line-height: 65px;
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.task-static .task-target p {
+	font-size: 36px;
+	line-height: 65px;
+	text-align: left;
+	text-indent: 50px;
+}
+.task-static .task-target .blue {
+	color: #09F;
+}
+.task-static .task-target .ri {
+	text-align: right;
+	font-style: italic;
+}
+.task-static .task-target h2 {
+	font-size: 36px;
+	line-height: 65px;
+	text-align: center;
+}
+.task-static .task-target img {
+	display: inline;
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+}
+.task-static .task-target .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+img.attach {
+	margin-left: -10px;
+}

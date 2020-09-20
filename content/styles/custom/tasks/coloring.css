@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task#task-coloring-intro-2 .task-answer,
+.task#task-coloring-eacc-2 .task-answer {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+	border-radius: 45px;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 60px;
+}
+.task#task-coloring-intro-2 .task-answer.s,
+.task#task-coloring-eacc-2 .task-answer.s {
+	border-width: 5px;
+	padding: 2px;
+}
+.task#task-coloring-intro-2 .task-target,
+.task#task-coloring-eacc-2 .task-target {
+	font-size: 48px;
+	line-height: 40px;
+	min-width: 40px;
+	min-height: 40px;
+}
+.task#task-coloring-intro-2 .task-target.failure {
+	border: 2px solid #CC071E;
+	border-radius: 30px;
+}
+.task#task-coloring-intro-2 .task-target.success{
+	border: 2px solid #6DAB23;
+	border-radius: 30px;
+}
+.task#task-coloring-intro-2 .task-playground,
+.task#task-coloring-eacc-2 .task-playground {
+	margin: 15px 0px;
+	height: 400px;
+	min-height: 0px;
+}
+.task#task-coloring-eacc-2 .task-palette h1 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 15px;
+}
+
+.task#task-coloring-recap-1-7 .task-answer img {
+	width: 80px;
+	height: auto;
+}
+
+.task#task-coloring-sz-2 .task-answer,
+.task#task-coloring-g-2 .task-answer,
+.task#task-coloring-ue-ueacc-2 .task-answer,
+.task#task-coloring-gy-2 .task-answer,
+.task#task-coloring-ny-2 .task-answer {
+	width: 60px;
+	height: 60px;
+	border-radius: 45px;
+	color: #FFFFFF;
+	font-size: 36px;
+	line-height: 54px;
+}
+.task#task-coloring-sz-2 .task-target,
+.task#task-coloring-g-2 .task-target,
+.task#task-coloring-ue-ueacc-2 .task-target,
+.task#task-coloring-gy-2 .task-target,
+.task#task-coloring-ny-2 .task-target {
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+}

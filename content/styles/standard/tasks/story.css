@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-story .task-target {
+	display: block;
+	width: 480px;
+	height: 480px;
+	position: relative;
+	margin: 15px auto;
+}
+.task-story .task-answer {
+	position: absolute;
+	opacity: 0;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	width: 480px;
+	height: 480px;
+	line-height: 0px;
+	text-align: center;
+	-webkit-transition: all ease-in-out 1s;
+	-moz-transition: all ease-in-out 1s;
+	-o-transition: all ease-in-out 1s;
+	transition: all ease-in-out 1s;
+}
+.task-story .task-answer img {
+	width: 100%;
+	height: auto;
+}
+.task-story .task-answer.active {
+	position: absolute;
+	opacity: 1;
+}
+.task-story .task-audio-wrapper {
+	display: block;
+	line-height: 60px;
+	border: 0px;
+	margin: 0px 0px 15px;
+	padding: 0px;
+}
+.task-story .task-audio-trigger#story-start {
+	position: relative !important;
+	margin: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height: auto;
+}

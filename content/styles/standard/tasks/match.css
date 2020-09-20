@@ -1,0 +1,616 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-match .task-spacer {
+	margin: 15px 0px;
+}
+.task-match.liner .task-spacer td,
+.task-match.color .task-spacer td {
+	min-height: 150px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.task-match.liner .task-target.text,
+.task-match.color .task-target.text {
+	display: inline-block;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 15px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-radius: 15px;
+	margin: 15px 15px;
+	
+	transition: all ease-in-out 0.25s;
+	-o-transition: all ease-in-out 0.25s;
+	-moz-transition: all ease-in-out 0.25s;
+	-webkit-transition: all ease-in-out 0.25s;
+}
+.task-match.color .task-answer.icon,
+.task-match.color .task-answer.text {
+	display: inline-block;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 15px;
+	/*min-width: 120px;*/
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 15px;
+	margin: 15px 15px;
+}
+.task-match.liner .task-answer.text {
+	display: inline-block;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 15px;
+	min-width: 120px;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 15px;
+	margin: 75px 15px;
+}
+.task-match.color .task-answer.text {
+	display: inline-block;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 15px;
+	/*min-width: 120px;*/
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 15px;
+	margin: 60px 30px;
+}
+.task-match .not-checked .armed .task-answer {
+	cursor: pointer;
+}
+.task-match.liner .task-target.text,
+.task-match.color .task-target.text {
+	position: relative;
+	display: inline-block;
+}
+.task-match.liner .task-target.icon,
+.task-match.color .task-target.icon {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+}
+.task-match.liner .task-target.icon .disc,
+.task-match.color .task-target.icon .disc {
+	display: block;
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	border: 5px solid #FFFFFF;
+	background: #FFFFFF;
+	border-radius: 50%;
+	z-index: 100;
+
+	transition: all ease-in-out 0.25s;
+	-o-transition: all ease-in-out 0.25s;
+	-moz-transition: all ease-in-out 0.25s;
+	-webkit-transition: all ease-in-out 0.25s;
+}
+.task-match.liner .task-target.text.s,
+.task-match.color .task-target.text.s,
+.task-match.liner .task-target.icon.s .disc,
+.task-match.color .task-target.icon.s .disc {
+	border-color: #666666;
+}
+.task-match.liner .task-target .task-marks {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: display;
+	z-index: 10;
+}
+.task-match.liner .task-target .task-marks .mark {
+	display: block;
+	position: absolute;
+	height: 6px;
+	border-radius: 10px;
+	background-color: #000000;
+}
+.task-match.liner .task-target .task-marks .mark.c {
+	background-color: #CC0E17;
+}
+.task-match.liner .task-target .task-marks .mark.center {
+	left: 50%;
+	top: 50%;
+}
+.task-match.liner .task-target .task-marks .mark.above {
+	margin-top: -2px;
+	left: 50%;
+	bottom: -0px;
+}
+.task-match.liner .task-target .task-marks .mark.below {
+	margin-bottom: -2px;
+	left: 50%;
+	top: -0px;
+}
+.task-match.liner .task-target .task-marks .mark.ahead {
+	margin-left: 2px;
+	left: 100%;
+	top: 50%;
+}
+.task-match.liner .task-target .task-marks .mark.beyond {
+	margin-right: -2px;
+	right: 100%;
+	top: 50%;
+}
+.task-match.liner .inside .task-target .task-marks .mark.above {
+	margin-bottom: -5px;
+	margin-top: 0px;
+}
+.task-match.liner .inside .task-target .task-marks .mark.below {
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.task-match.liner .inside .task-target .task-marks .mark.ahead {
+	margin-right: -5px;
+	margin-left: 0px;
+}
+.task-match.liner .inside .task-target .task-marks .mark.beyond {
+	margin-left: -5px;
+	margin-right: 0px;
+}
+.task-match.liner .not-checked .task-target.text,
+.task-match.color .not-checked .task-target.text,
+.task-match.liner .not-checked .task-target.icon .task-avatar,
+.task-match.color .not-checked .task-target.icon .task-avatar {
+	cursor: pointer;
+}
+.task-match.liner .not-checked .task-target.icon .task-avatar:hover .disc,
+.task-match.color .not-checked .task-target.icon .task-avatar:hover .disc {
+	width: 100px;
+	height: 100px;
+	border-width: 10px;
+	border-color: #CCCCCC;
+}
+.task-match.liner .not-checked .task-target.icon.s .task-avatar:hover .disc,
+.task-match.color .not-checked .task-target.icon.s .task-avatar:hover .disc {
+	border-color: #666666;
+}
+.task-match.liner .checked .task-target.icon.success:after,
+.task-match.liner .checked .task-target.icon.failure:after,
+.task-match.color .checked .task-target.icon.success:after,
+.task-match.color .checked .task-target.icon.failure:after {
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	bottom: 5px;
+	right: 5px;
+	z-index: 10000;
+}
+.task-match.liner .checked .task-target.text.success:after,
+.task-match.liner .checked .task-target.text.failure:after,
+.task-match.color .checked .task-target.text.success:after,
+.task-match.color .checked .task-target.text.failure:after {
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	bottom: -22px;
+	right: -22px;
+	z-index: 10000;
+}
+.task-match.liner .checked .task-target.success:after,
+.task-match.color .checked .task-target.success:after {
+	content: url(../../../data/images/system/overlay_right.png);
+}
+.task-match.liner .checked .task-target.failure:after,
+.task-match.color .checked .task-target.failure:after {
+	content: url(../../../data/images/system/overlay_wrong.png);
+}
+.task-match.liner .task-answer.icon img,
+.task-match.color .task-answer.icon img,
+.task-match.liner .task-target.icon img,
+.task-match.color .task-target.icon img {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 120px;
+	height: auto;
+	vertical-align: bottom;
+	z-index: 1000;
+}
+.task-match.liner .task-answer.icon,
+.task-match.color .task-answer.icon {
+	border-radius: 50% !important;
+}
+.task-match.liner .task-answer.g0,
+.task-match.color.border-only .task-answer.g0 {
+	border-color: #666;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g1,
+.task-match.color.border-only .task-answer.g1 {
+	border-color: #09F;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g2,
+.task-match.color.border-only .task-answer.g2 {
+	border-color: #F60;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g3,
+.task-match.color.border-only .task-answer.g3 {
+	border-color: #CC0;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g4,
+.task-match.color.border-only .task-answer.g4 {
+	border-color: #6C0;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g5,
+.task-match.color.border-only .task-answer.g5 {
+	border-color: #96F;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g6,
+.task-match.color.border-only .task-answer.g6 {
+	border-color: #099;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g7,
+.task-match.color.border-only .task-answer.g7 {
+	border-color: #960;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g8,
+.task-match.color.border-only .task-answer.g8 {
+	border-color: #F6C;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g9,
+.task-match.color.border-only .task-answer.g9 {
+	border-color: #390;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g10,
+.task-match.color.border-only .task-answer.g10 {
+	border-color: #F00;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g11,
+.task-match.color.border-only .task-answer.g11 {
+	border-color: #039;
+	background: #FFFFFF;
+}
+.task-match.liner .task-answer.g12,
+.task-match.color.border-only .task-answer.g12 {
+	border-color: #C93;
+	background: #FFFFFF;
+}
+.task-match.color.border-bg .task-answer.g0 {
+	border-color: #666;
+	background-color: #666;
+}
+.task-match.color.border-bg .task-answer.g1 {
+	border-color: #09F;
+	background-color: #15A2FF;
+}
+.task-match.color.border-bg .task-answer.g2 {
+	border-color: #F60;
+	background-color: #FF802B;
+}
+.task-match.color.border-bg .task-answer.g3 {
+	border-color: #CC0;
+	background-color: #D5D500;
+}
+.task-match.color.border-bg .task-answer.g4 {
+	border-color: #6C0;
+	background-color: #6AD500;
+}
+.task-match.color.border-bg .task-answer.g5 {
+	border-color: #96F;
+	background-color: #A275FF;
+}
+.task-match.color.border-bg .task-answer.g6 {
+	border-color: #099;
+	background-color: #0AA;
+}
+.task-match.color.border-bg .task-answer.g7 {
+	border-color: #960;
+	background-color: #AA7300;
+}
+.task-match.color.border-bg .task-answer.g8 {
+	border-color: #800080;
+	background-color: #A0A;
+}
+.task-match.color.border-bg .task-answer.g9 {
+	border-color: #F6C;
+	background-color: #FF80D6;
+}
+.task-match.color.border-bg .task-answer.g10 {
+	border-color: #F00;
+	background-color: #FF3535;
+}
+.task-match.color.border-bg .task-answer.g11 {
+	border-color: #039;
+	background-color: #003AB5;
+}
+.task-match.color.border-bg .task-answer.g12 {
+	border-color: #C93;
+	background-color: #D5AB55;
+}
+.task-match.color.instant .task-audio-trigger {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	padding: 10px;
+}
+.task-match.color.instant .task-target,
+.task-match.color.instant .task-answer {
+	position: relative;
+	display: inline-block;
+}
+.task-match.color.instant .task-target {
+	width: 48px;
+	height: 48px;
+	padding: 5px;
+	margin: 5px;
+}
+.task-match.color.instant .task-target.s {
+	border-color: #004466;
+}
+.task-match.color.instant .task-audio-wrapper {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	height: 100%;
+}
+.task-match.color.instant .task-answer {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	margin: 5px;
+}
+.task-match.color.instant .task-target.matched {
+	border-color: ;
+}
+.task-match.color.instant .task-target.matched:after,
+.task-match.color.instant .task-answer.matched:after {
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	bottom: 5px;
+	right: 5px;
+	z-index: 10000;
+	content: url(../../../data/images/system/overlay_right.png);
+}
+.task-match.dasher .not-checked .task-target,
+.task-match.dasher.selecting .not-checked .task-target.a,
+.task-match.dasher.selecting .not-checked .task-target.s {
+	cursor: pointer;
+}
+.task-match.dasher .checked .task-target
+.task-match.dasher.selecting .not-checked .task-target {
+	cursor: default
+}
+.task-match.dasher table.task-spacer .task-target {
+	display: block;
+	position: relative;
+	border-radius: 10px;
+	background: #FFFFFF;
+	transition: all ease-in-out 0.25s;
+	-o-transition: all ease-in-out 0.25s;
+	-moz-transition: all ease-in-out 0.25s;
+	-webkit-transition: all ease-in-out 0.25s;
+}
+.task-match.dasher.selecting table.task-spacer .task-target.a,
+.task-match.dasher table.task-spacer .task-target:hover {
+	background: #DDDDDD;
+}
+.task-match.dasher table.task-spacer .task-target {
+	background: #FFFFFF;
+}
+.task-match.dasher .task-target h2 {
+	position: relative;
+	z-index: 100;
+	text-shadow: 0px 0px 10px #FFFFFF;
+}
+.task-match.dasher .task-target .h,
+.task-match.dasher .task-target .v,
+.task-match.dasher .task-target .wh,
+.task-match.dasher .task-target .wv {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #6699FF;
+	min-width: 2px;
+	min-height: 2px;
+	z-index: 10;
+}
+.task-match.dasher .task-target .h,
+.task-match.dasher .task-target .wh {
+	margin: -2px 0px 0px 10px;
+}
+.task-match.dasher .task-target .v,
+.task-match.dasher .task-target .wv {
+	margin: 10px 0px 0px -2px;
+}
+.task-match.dasher .task-target .h.c,
+.task-match.dasher .task-target .v.c,
+.task-match.dasher .task-target .wh,
+.task-match.dasher .task-target .wv {
+	background: #CC0E17;
+}
+.task-match.dasher table.task-spacer .task-target:hover {
+	background: #DDDDDD;
+}
+.task-match.dasher table.task-spacer .task-target.s,
+.task-match.dasher table.task-spacer .task-target.s:hover {
+	background: #0066CC;
+	color: #FFFFFF;
+}
+.task-match.dasher table.task-spacer .task-target {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 50px;
+	position: relative;
+}
+
+.task-match.runtime .not-checked .task-target {
+	cursor: pointer;
+}
+.task-match.arrow .task-arrow-wrapper {
+	min-width: 195px;
+	height: 11px;
+}
+.task-match.arrow .task-arrow {
+	height: 11px;
+	margin: 0px 75px;
+	background: url(../../../data/images/system/overlay_arrow.png) center right no-repeat transparent;
+}
+.task-match.arrow .task-playground {
+	position: relative;
+	margin: 15px 0px;
+	height: 480px;
+}
+.task-match.linear .task-target {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	position: absolute;
+}
+.task-match.linear .task-target.g1 {
+	left: 0%;
+	top: 0%;
+}
+.task-match.linear .task-target.g2 {
+	left: 20%;
+	top: 30%;
+}
+.task-match.linear .task-target.g3 {
+	left: 50%;
+	top: 0%;
+}
+.task-match.linear .task-target.g4 {
+	left: 70%;
+	top: 0%;
+}
+.task-match.linear .task-target.g5 {
+	left: 81%;
+	top: 32%;
+}
+.task-match.linear .task-target.g6 {
+	left: 42%;
+	top: 35%;
+}
+.task-match.linear .task-target.g7 {
+	left: 25%;
+	top: 0%;
+}
+.task-match.linear .task-target.g8 {
+	left: 0%;
+	top: 30%;
+}
+.task-match.linear .task-target.g9 {
+	left: 5%;
+	top: 75%;
+}
+.task-match.linear .task-target.g10 {
+	left: 23%;
+	top: 50%;
+}
+.task-match.linear .task-target.g11 {
+	left: 40%;
+	top: 75%;
+}
+.task-match.linear .task-target.g12 {
+	left: 80%;
+	top: 75%;
+}
+.task-match.linear .task-target.g13 {
+	left: 61%;
+	top: 53%;
+}
+.task-match.linear .task-target img {
+	width: 100%;
+	height: auto;
+}
+.task-match.arrow .task-target .task-marks {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	z-index: 100;
+}
+
+.task-match .task-question.radial {
+	width: 480px;
+	height: 480px;
+	margin: 15px auto;
+	position: relative;
+}
+.task-match .task-question.radial .task-answer,
+.task-match .task-question.radial .task-target {
+	position: absolute;
+	min-width: 80px;
+	min-height: 80px;
+	margin: -40px 0px 0px -40px;
+	border-width: 5px;
+	border-radius: 45px;
+	padding: 0px;
+	font-size: 36px;
+	line-height: 80px;
+	text-align: center;
+	background: #FFFFFF;
+}
+.task-match .task-question.radial .task-answer .label,
+.task-match .task-question.radial .task-target .label {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	z-index: 100;
+	background-color: #FFFFFF;
+	border-radius: 40px;
+}
+.task-match .task-question.radial .task-marks {
+	z-index: 10;
+}
+.task-match .task-question.radial .task-answer.rad-mid {
+	left: 50%;
+	top: 50%;
+}
+.task-match .task-question.radial .task-target.rad-1-7 {
+	left: 50%;
+	top: 10%;
+}
+.task-match .task-question.radial .task-target.rad-2-7 {
+	left: 81%;
+	top: 24%;
+}
+.task-match .task-question.radial .task-target.rad-3-7 {
+	left: 89%;
+	top: 58%;
+}
+.task-match .task-question.radial .task-target.rad-4-7 {
+	left: 67%;
+	top: 85%;
+}
+.task-match .task-question.radial .task-target.rad-5-7 {
+	left: 33%;
+	top: 85%;
+}
+.task-match .task-question.radial .task-target.rad-6-7 {
+	left: 11%;
+	top: 58%;
+}
+.task-match .task-question.radial .task-target.rad-7-7 {
+	left: 19%;
+	top: 24%;
+}

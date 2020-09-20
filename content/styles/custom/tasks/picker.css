@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task#task-picker-n .lesson {
+	font-size: 36px;
+	line-height: 40px;
+}
+.task#task-picker-n .not-checked .lesson u:hover,
+.task#task-picker-n .not-checked .lesson i:hover {
+	font-size: 40px;
+}
+
+.task#task-picker-oe-oeacc .lesson {
+	font-size: 32px;
+	line-height: 40px;
+}
+.task#task-picker-oe-oeacc div.center {
+	width: 50%;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.task#task-picker-oe-oeacc .not-checked .lesson u:hover,
+.task#task-picker-oe-oeacc .not-checked .lesson i:hover {
+	font-size: 40px;
+}
+
+.task#task-picker-j .lesson {
+	font-size: 36px;
+	line-height: 40px;
+}
+.task#task-picker-j .not-checked .lesson u:hover,
+.task#task-picker-j .not-checked .lesson i:hover {
+	font-size: 40px;
+}
+
+.task#task-picker-z .lesson {
+	font-size: 30px;
+	line-height: 36px;
+}
+.task#task-picker-z .not-checked .lesson u:hover,
+.task#task-picker-z .not-checked .lesson i:hover {
+	font-size: 36px;
+}
+
+.task#task-picker-r .lesson {
+	font-size: 30px;
+	line-height: 36px;
+}
+.task#task-picker-r .not-checked .lesson u:hover,
+.task#task-picker-r .not-checked .lesson i:hover {
+	font-size: 36px;
+}
+
+.task#task-picker-h .lesson {
+	font-size: 36px;
+	line-height: 40px;
+}
+.task#task-picker-h .not-checked .lesson u:hover,
+.task#task-picker-h .not-checked .lesson i:hover {
+	font-size: 40px;
+}
+
+.task#task-picker-g .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-g .not-checked .lesson u:hover,
+.task#task-picker-g .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-b .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-b .not-checked .lesson u:hover,
+.task#task-picker-b .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-ue-ueacc .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-ue-ueacc .not-checked .lesson u:hover,
+.task#task-picker-ue-ueacc .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-ty .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-ty .not-checked .lesson u:hover,
+.task#task-picker-ty .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-cs .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-cs .not-checked .lesson u:hover,
+.task#task-picker-cs .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-gy .lesson {
+	font-size: 36px;
+	line-height: 40px;
+}
+.task#task-picker-gy .not-checked .lesson u:hover,
+.task#task-picker-gy .not-checked .lesson i:hover {
+	font-size: 40px;
+}
+
+.task#task-picker-ny .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-ny .not-checked .lesson u:hover,
+.task#task-picker-ny .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-zs .lesson {
+	font-size: 45px;
+	line-height: 54px;
+}
+.task#task-picker-zs .not-checked .lesson u:hover,
+.task#task-picker-zs .not-checked .lesson i:hover {
+	font-size: 54px;
+}
+
+.task#task-picker-ly .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-ly .not-checked .lesson u:hover,
+.task#task-picker-ly .not-checked .lesson i:hover {
+	font-size: 60px;
+}
+
+.task#task-picker-dzdzs .lesson {
+	font-size: 48px;
+	line-height: 60px;
+}
+.task#task-picker-dzdzs .not-checked .lesson u:hover,
+.task#task-picker-dzdzs .not-checked .lesson i:hover {
+	font-size: 60px;
+}

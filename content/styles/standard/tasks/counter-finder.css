@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-counter .task-target,
+.task-finder .task-target {
+	display: inline-block;
+	position: relative;
+}
+.task-counter .task-target.success:after,
+.task-finder .task-target.success:after,
+.task-counter .task-target.failure:after,
+.task-finder .task-target.failure:after {
+	display: block;
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	right: -48px;
+	bottom: -8px;
+}
+.task-counter .task-target.success:after,
+.task-finder .task-target.success:after {
+	content: url(../../../data/images/system/overlay_right.png);
+}
+.task-counter .task-target.failure:after,
+.task-finder .task-target.failure:after {
+	content: url(../../../data/images/system/overlay_wrong.png);
+}
+.task-counter .task-target h1,
+.task-finder .task-target h1 {
+	line-height: 36px;
+	font-weight: normal;
+}
+.task-counter .task-target img,
+.task-finder .task-target img {
+	width: 180px;
+	height: auto;
+	vertical-align: bottom;
+	margin-bottom: 15px;
+}
+.task-counter .task-target .task-question,
+.task-finder .task-target .task-question {
+	white-space: nowrap;
+}
+.task-counter .task-target .task-answer,
+.task-finder .task-target .task-answer {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	margin: 2px;
+	border: 1px solid #333333;
+	border-radius: 15px;
+	
+	background: #FFFFFF;
+	
+	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.4) inset;
+	
+	transition: all ease-in-out 0.25s;
+	-o-transition: all ease-in-out 0.25s;
+	-moz-transition: all ease-in-out 0.25s;
+	-webkit-transition: all ease-in-out 0.25s;
+}
+.task-counter .subpage.not-checked .task-target .task-answer.c,
+.task-finder .subpage.not-checked .task-target .task-answer {
+	cursor: pointer;
+}
+.task-counter .subpage.checked .task-target .task-answer.c,
+.task-finder .subpage.checked .task-target .task-answer.c {
+	cursor: default;
+}
+
+.task-counter .task-target .task-answer.s {
+	background: #258abc;
+}
+.task-counter .subpage.checked .task-target .task-answer.p1 {
+	background: #cc071e;
+}
+.task-counter .subpage.checked .task-target .task-answer.p0.s {
+	background: #258abc url(../../../data/images/system/overlay_crossout.png) center center;
+}
+.task-counter .subpage.checked .task-target .task-answer.p1.s {
+	background: #258abc;
+}
+
+.task-finder .task-target .task-answer.s1 {
+	background: #258abc;
+}
+.task-finder .task-target .task-answer.s2 {
+	background: #78bc25;
+}
+.task-finder .subpage.checked .task-target .task-answer.p1,
+.task-finder .subpage.checked .task-target .task-answer.p2 {
+	background: #cc071e;
+}
+.task-finder .subpage.checked .task-target .task-answer.p0.s1,
+.task-finder .subpage.checked .task-target .task-answer.p2.s1 {
+	background: #258abc url(../../../data/images/system/overlay_crossout.png) center center;
+}
+.task-finder .subpage.checked .task-target .task-answer.p0.s2,
+.task-finder .subpage.checked .task-target .task-answer.p1.s2 {
+	background: #78bc25 url(../../../data/images/system/overlay_crossout.png) center center;
+}
+.task-finder .subpage.checked .task-target .task-answer.p1.s1 {
+	background: #258abc;
+}
+.task-finder .subpage.checked .task-target .task-answer.p2.s2 {
+	background: #78bc25;
+}
+.task-finder .subpage.checked .task-target .task-answer div {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	top: 100%;
+	left: 0%;
+	font-size: 24px;
+	line-height: 30px;
+}

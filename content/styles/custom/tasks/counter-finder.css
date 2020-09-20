@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task#task-finder-test-1-4 .task-spacer td {
+	width: 33.333333%;
+}
+.task#task-finder-test-1-4 .task-target img {
+	width: 150px;
+	height: auto;
+}

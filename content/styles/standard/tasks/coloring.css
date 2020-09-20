@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+.task-coloring h1 img {
+	width: 270px;
+	height: auto;
+}
+.task-coloring h2 img {
+	width: 240px;
+	height: auto;
+}
+.task-coloring h3 img {
+	width: 210px;
+	height: auto;
+}
+.task-coloring h4 img {
+	width: 180px;
+	height: auto;
+}
+.task-coloring h5 img {
+	width: 150px;
+	height: auto;
+}
+.task-coloring h6 img {
+	width: 120px;
+	height: auto;
+}
+
+.task-coloring div.task-canvas {
+	display: inline-block;
+	width: 0px auto;
+}
+.task-coloring .task-canvas-base {
+	position: absolute;
+	z-index: 10;
+}
+.task-coloring .task-canvas-active {
+	position: relative;
+	z-index: 100;
+}
+.task-coloring .not-checked .task-target,
+.task-coloring .not-checked .task-answer {
+	cursor: pointer;
+	
+}
+.task-coloring .task-answer {
+	display: inline-block;
+	border: 2px solid #CCCCCC;
+	border-radius: 10px;
+	margin: 15px;
+	padding: 5px;
+	
+	transition: all ease-out 0.25s;
+	-o-transition: all ease-out 0.25s;
+	-moz-transition: all ease-out 0.25s;
+	-webkit-transition: all ease-out 0.25s;
+}
+.task-coloring .task-answer.active {
+	padding: 2px;
+	border: 5px solid #999999;
+	border-radius: 15px;
+}
+.task-coloring.bubble .task-answer,
+.task-coloring.bubble .task-target {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	padding: 2px;
+	border-color: #333333;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 60px;
+	margin: 5px;
+	vertical-align: middle;
+}
+.task-coloring.bubble .task-answer.s {
+	margin: 0px;
+	padding: 0px;
+	border-width: 5px;
+	
+	width: 45px;
+	height: 45px;
+}
+.task-coloring.text .not-checked .task-answer,
+.task-coloring.bubble.armed .not-checked .task-target {
+	cursor: pointer;
+}
+.task-coloring.text .task-answer.g1,
+.task-coloring.bubble .task-answer.g1 {
+	background-color: #F33;
+	border-color: #C33;
+}
+.task-coloring.text .task-answer.g2,
+.task-coloring.bubble .task-answer.g2 {
+	background-color: #6C3;
+	border-color: #690;
+}
+.task-coloring.text .task-answer.g3,
+.task-coloring.bubble .task-answer.g3 {
+	background-color: #FC3;
+	border-color: #C90;
+}
+.task-coloring.text .task-answer.g4,
+.task-coloring.bubble .task-answer.g4 {
+	background-color: #0CC;
+	border-color: #099;
+}
+.task-coloring.text .task-answer.g5,
+.task-coloring.bubble .task-answer.g5 {
+	background-color: #96C;
+	border-color: #63C;
+}
+.task-coloring.text .task-answer.g6,
+.task-coloring.bubble .task-answer.g6 {
+	background-color: #F90;
+	border-color: #F60;
+}
+.task-coloring.text .task-answer.g7,
+.task-coloring.bubble .task-answer.g7 {
+	background-color: #F9C;
+	border-color: #F69;
+}
+.task-coloring.text .task-answer.g8,
+.task-coloring.bubble .task-answer.g8 {
+	background-color: #963;
+	border-color: #930;
+}
+.task-coloring.text .task-answer.g9,
+.task-coloring.bubble .task-answer.g9 {
+	background-color: #093;
+	border-color: #060;
+}
+.task-coloring.text .task-answer.g10,
+.task-coloring.bubble .task-answer.g10 {
+	background-color: #06C;
+	border-color: #039;
+}
+.task-coloring.text .task-answer.g11,
+.task-coloring.bubble .task-answer.g11 {
+	background-color: #C41;
+	border-color: #A20;
+}
+.task-coloring.bubble.armed .checked .task-target:after {
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	right: -2px;
+	top: -50px;
+}
+.task-coloring.bubble.armed .checked .task-target.success:after {
+	content: url(../../../data/images/system/overlay_right.png);
+}
+.task-coloring.bubble.armed .checked .task-target.failure:after {
+	content: url(../../../data/images/system/overlay_wrong.png);
+}
+.task-coloring .task-playground {
+	width: 100%;
+	min-height: 480px;
+	position: relative;
+	margin-top: 60px;
+}
+.task-coloring .task-playground .task-answer,
+.task-coloring .task-playground .task-target {
+	position: absolute;
+	display: block;
+	width: 45px;
+	height: 45px;
+	font-size: 30px;
+	line-height: 45px;
+	padding: 5px;
+	border-width: 3px;
+}
+.task-coloring .task-playground .task-answer,
+.task-coloring .task-playground .task-target.c {
+	color: #FFFFFF;
+}
+.task-coloring .task-playground .task-answer.s {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	padding: 8px;
+	border-width: 5px;
+}
+.task-coloring .task-playground .pos-01 {
+	left: 85%;
+	top: 65%;
+}
+.task-coloring .task-playground .pos-02 {
+	left: 30%;
+	top: 3%;
+}
+.task-coloring .task-playground .pos-03 {
+	left: 65%;
+	top: 50%;
+}
+.task-coloring .task-playground .pos-04 {
+	left: 0%;
+	top: 0%;
+}
+.task-coloring .task-playground .pos-05 {
+	left: 18%;
+	top: 40%;
+}
+.task-coloring .task-playground .pos-06 {
+	left: 85%;
+	top: 0%;
+}
+.task-coloring .task-playground .pos-07 {
+	left: 5%;
+	top: 38%;
+}
+.task-coloring .task-playground .pos-08 {
+	left: 75%;
+	top: 20%;
+}
+.task-coloring .task-playground .pos-09 {
+	left: 65%;
+	top: 0%;
+}
+.task-coloring .task-playground .pos-10 {
+	left: 50%;
+	top: 70%;
+}
+.task-coloring .task-playground .pos-11 {
+	left: 88%;
+	top: 34%;
+}
+.task-coloring .task-playground .pos-12 {
+	left: 13%;
+	top: 70%;
+}
+.task-coloring .task-playground .pos-13 {
+	left: 0%;
+	top: 70%;
+}
+.task-coloring .task-playground .pos-14 {
+	left: 16%;
+	top: 16%;
+}
+.task-coloring .task-playground .pos-15 {
+	left: 50%;
+	top: 40%;
+}
+.task-coloring .task-playground .pos-16 {
+	left: 45%;
+	top: 5%;
+}
+.task-coloring .task-playground .pos-17 {
+	left: 28%;
+	top: 54%;
+}
+.task-coloring .task-playground .pos-18 {
+	left: 76%;
+	top: 44%;
+}
+.task-coloring .task-playground .pos-19 {
+	left: 65%;
+	top: 72%;
+}
+.task-coloring .task-playground .pos-20 {
+	left: 30%;
+	top: 75%;
+}
+.task-coloring .task-playground .pos-21 {
+	left: 30%;
+	top: 30%;
+}
+.task-coloring .task-playground .pos-22 {
+	left: 45%;
+	top: 24%;
+}
+.task-coloring .task-playground .pos-23 {
+	left: 58%;
+	top: 24%;
+}
+.task-coloring .task-playground .pos-24 {
+	left: 40%;
+	top: 50%;
+}
+.task-coloring .task-playground .pos-25 {
+	left: 28%;
+	top: 24%;
+}
+.task-coloring .task-playground .pos-26 {
+	left: 38%;
+	top: 44%;
+}
+

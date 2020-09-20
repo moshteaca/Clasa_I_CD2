@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contents ol {
+	display: block;
+	width: 100%;
+	list-style: none outside;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+.contents table td .button {
+	list-style: none outside;
+	width: 294px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+	float: left;
+	cursor: pointer;
+}
+.contents table td .button .icons {
+	height: 45px;
+	display: inline-block;
+	float: right;
+}
+.contents table td .button .icons img {
+	width: 55px;
+	height: auto;
+	vertical-align: bottom;
+	border-width: 2px;
+	margin: 0px 0px 0px 5px;
+	border-style: solid;
+	border-radius: 5px;
+	background: #FFFFFF;
+	transition: all 0.2s linear;
+}
+.contents table td .button .label {
+	height: 45px;
+	font-size: 24px;
+	line-height: 45px;
+	margin: 5px 0px;
+	border-width: 2px 0px 2px 2px;
+	border-style: solid;
+	border-radius: 5px 0px 0px 5px;
+	padding: 0px 10px;
+	background: #FFFFFF;
+	transition: all 0.2s linear;
+}
+.contents table td .button#button-dzdzs .label {
+	font-size: 21px;
+}
+.contents table td .button.system * {
+	color: #488004;
+	border-color: #488004;
+}
+.contents table td .button.vowel * {
+	color: #CC071E;
+	border-color: #CC071E;
+}
+.contents table td .button.consonant * {
+	color: #008BCF;
+	border-color: #008BCF;
+}
+
+.contents table td .button.system:hover .label {
+	background-color: #7BB337;
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.contents table td .button.vowel:hover .label {
+	background-color: #FF3A3F;
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.contents table td .button.consonant:hover .label {
+	background-color: #33BEFF;
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+
+.devmap-link {
+	display: none;
+	visibility: hidden;
+}
